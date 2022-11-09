@@ -31,7 +31,8 @@ app.get('/form', function (req, res) {
     res.sendFile(__dirname + "/public/form.html");
 })
 
-var server = app.listen(443, "0.0.0.0", function () {
+//var server = app.listen(443, "0.0.0.0", function () {
+var server = app.listen(process.env.PORT || 3000, "0.0.0.0", function () {
 
     var host = server.address().address
     var port = server.address().port
