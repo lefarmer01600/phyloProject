@@ -22,10 +22,10 @@ let questions = [
     question: "Si quelqu'un se fait agresser par plusieurs personnes armées dans la rue",
     response: ["Vous partez", "Vous aidez la personne"]
   },
-  {
-    question: "Si un membre de votre famille se fait agresser par plusieurs personnes armées dans la rue",
-    response: ["Vous partez", "Vous aidez la personne"]
-  },
+//   {
+//     question: "Si un membre de votre famille se fait agresser par plusieurs personnes armées dans la rue",
+//     response: ["Vous partez", "Vous aidez la personne"]
+//   },
   {
     question: "Pensez vous qu'avec l'age on devient :",
     response: ["aucun des deux", "Altruiste", "égoïste"]
