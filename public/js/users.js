@@ -46,8 +46,8 @@ $(function() {
 
     return columnSet;
   }
-
-  const ws = new WebSocket("wss://phyloproject.lefarmer01600.repl.co:443")
+  let host = location.origin.replace(/^https/, 'wss')
+  const ws = new WebSocket(host)
   //const ws = new WebSocket("ws://localhost:8000")
 
   ws.addEventListener("message", function(event) {
