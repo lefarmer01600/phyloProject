@@ -1,5 +1,5 @@
 $(function() {
-  var host = location.origin.replace(/^http/, 'wss')
+  let host = location.origin.replace(/^https/, 'wss')
   const ws = new WebSocket(host)
   //const ws = new WebSocket("ws://localhost:8000")
 
