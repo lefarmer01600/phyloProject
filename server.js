@@ -89,6 +89,7 @@ app.get('/users', function(req, res) {
 
 let jsonParser = bodyParser.json()
 app.post('/admin', jsonParser, function(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
   if (req.body.type === "nextquestion" && questions.length > CurrentQuestion + 1) {
     CurrentQuestion += 1
     wss.clients.forEach((client) => {
