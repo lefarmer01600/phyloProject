@@ -89,7 +89,11 @@ app.get('/users', function(req, res) {
 
 let jsonParser = bodyParser.json()
 app.post('/admin', jsonParser, function(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Origin', 'https://philoproject.herokuapp.com');
+  res.header('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.header('Access-Control-Allow-Methods', 'GET, OPTIONS');
+  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+  res.header('Access-Control-Allow-Credentials', true);
   if (req.body.type === "nextquestion" && questions.length > CurrentQuestion + 1) {
     CurrentQuestion += 1
     wss.clients.forEach((client) => {
