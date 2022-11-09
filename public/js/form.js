@@ -4,7 +4,8 @@ $(function() {
       get: (searchParams, prop) => searchParams.get(prop),
     });
     $('.p-t-136').text(params.firstname + " " + params.name)
-    var host = location.origin.replace(/^http/, 'ws')
+    let host = location.origin.replace(/^http/, 'ws')
+    console.log(host)
     const ws = new WebSocket(host)
     //const ws = new WebSocket("ws://localhost:8000")
 
