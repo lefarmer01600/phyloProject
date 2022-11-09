@@ -17,7 +17,7 @@ $(function() {
 $("#next").click(function() {
   var xhr = new XMLHttpRequest();
   //var url = "http://localhost:8000/admin";
-  var url = "https://phyloProject.lefarmer01600.repl.co/admin";
+  var url = "/admin";
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function() {
