@@ -35,7 +35,7 @@ $("#next").click(function() {
 
 $("#reset").click(function() {
   var xhr = new XMLHttpRequest();
-  var url = "https://phyloProject.lefarmer01600.repl.co/admin";
+  var url = "/";
   xhr.open("POST", url, true);
   xhr.setRequestHeader("Content-Type", "application/json");
   xhr.onreadystatechange = function() {
